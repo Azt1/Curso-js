@@ -4,34 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>model</title>
+    <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <section class="container">
-    <h1>Lorem ipsum dolor sit</h1>
-    <p>
-        Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. 
-        orrupti distinctio minima nobis?
-        Ipsa quos cumque, unde modi 
-    </p>
+    <h1 class="tituloPrincipal">Tabela IMC</h1>
 
+    <div class="box">
+
+        <div class="imc">
+        
+            <h3>IMC</h3>
+            <p>Menos do que 18,5<br>
+               Entre 18,5 e 24,9<br>
+               Entre 25 e 29,9<br>
+               Entre 30 e 34,9<br>
+               Entre 35 e 39,9<br>
+               Mais do que 40<br>
+            </p>
+        
+        </div>
+
+        <div class="resultado">
+            <h3>Resultado</h3>
+            <p class="t1">Abaixo do Peso<br>
+               Peso normal<br>
+               Sobrepeso<br>
+               Obesidade grau 1<br>
+               Obesidade grau 2<br>
+               Obesidade grau 3<br>
+            </p> 
+        </div>
+
+    </div>
+   
 
     <form action="">
-        <label for="input-teste-1">label teste #1<label>
+        <label for="input-teste-1">Peso:<label>
         <input type="text" id="input-teste-1">
 
-        <label for="input-teste-2">label teste #2<label>
-        <input type="password" id="input-teste-2">
+        <label for="input-teste-2">Altura:<label>
+        <input type="text" id="input-teste-2">
 
-        <label for="input-teste-3">label teste #3</label>
-        <input type="email"id="input-teste-3">
-
-        <label for="input-teste-4">label teste #4</label>
-        <input type="number" id="input-teste-4">
-
-        <button>Enviar</button>
+        <button>Calcular</button>
 
     </form>
 </section>

@@ -44,15 +44,31 @@ form input:focus {
 
 form button {
     border: none;
+    color:rgb(255, 255, 255);
     background: var(--primary-color);
-    color:rgb(4, 167, 139);
     font-size : 18px;
     font-weight: 800;
     height: 50px;
     cursor: pointer;
+   
 }
 
 form button:hover {
     background: var(--primary-color-dark);
     transition: 0.5s;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.t1 {
+    text-align: center;
+}
+
+.tituloPrincipal {
+    text-align: center;
 }
