@@ -72,3 +72,16 @@ form button:hover {
 .tituloPrincipal {
     text-align: center;
 }
+
+input span:invalid {
+    border: 1px solid red;
+  }
+  
+input span:valid {
+    border: 1px solid green;
+  }
+
+.paragrafo-resultado {
+    background-color: rgb(40, 224, 154);
+    padding: 10px;
+}
