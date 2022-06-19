@@ -81,7 +81,14 @@ input span:valid {
     border: 1px solid green;
   }
 
-.paragrafo-resultado {
+.good {
     background-color: rgb(40, 224, 154);
-    padding: 10px;
+    padding: 10px 20px; 
+    border-radius: 10px;
+}
+
+.bad {
+    background-color: rgb(226, 56, 56);
+    padding: 10px 20px;
+    border-radius: 10px;
 }
