@@ -1,5 +1,5 @@
 //  (condiçao)  ? 'Valor  para verdadeiro' :'Valor para falso'
-const pontuaçaoUsuario = 120    00;
+const pontuaçaoUsuario = 1200;
 const nivelUsuario = pontuaçaoUsuario >= 1000 ? 'Usuário VIP' : 'Usuário normal';
 
 const corUsuario = null;
