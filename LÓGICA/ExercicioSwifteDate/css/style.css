@@ -1,8 +1,3 @@
-:root {
-    --primary-color: rgb(4, 167, 139);
-    --primary-color-dark: rgb(7, 122, 103);
-}
-
 * {
     box-sizing: border-box;
     outline: 0;
@@ -22,73 +17,4 @@ body {
     background: #fff;
     padding: 50px;
     border-radius: 30px;
-}
-
-form input, form label, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px; 
-    border-radius: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-form input {
-    height: 50px;
-    font-size: 24px;
-    padding: 0 20px;
-}
-
-form input:focus {
-    outline:1px solid var (--priamry-color) ;
-}
-
-form button {
-    border: none;
-    color:rgb(255, 255, 255);
-    background: var(--primary-color);
-    font-size : 18px;
-    font-weight: 800;
-    height: 50px;
-    cursor: pointer;
-   
-}
-
-form button:hover {
-    background: var(--primary-color-dark);
-    transition: 0.5s;
-}
-
-.box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.t1 {
-    text-align: center;
-}
-
-.tituloPrincipal {
-    text-align: center;
-}
-
-input span:invalid {
-    border: 1px solid red;
-  }
-  
-input span:valid {
-    border: 1px solid green;
-  }
-
-.good {
-    background-color: rgb(40, 224, 154);
-    padding: 10px 20px; 
-    border-radius: 10px;
-}
-
-.bad {
-    background-color: rgb(226, 56, 56);
-    padding: 10px 20px;
-    border-radius: 10px;
 }
