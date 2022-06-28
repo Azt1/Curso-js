@@ -15,3 +15,9 @@
     console.log(i, par);
 }
  
+
+const frutas = ['Maça', 'Pêra', 'Uva','goiaba', 'melancia', 'morango'];
+
+for (let i = 0; i < frutas.length; i++) {
+    console.log(`Índice ${i} ${frutas[i]}`)
+}
