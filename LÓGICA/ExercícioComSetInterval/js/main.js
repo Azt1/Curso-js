@@ -1,6 +1,6 @@
-    function criaHoraDosSegundos () {
+    function criaHoraDosSegundos (segundos) {
         const data = new Date (segundos * 1000);
-        return data.toLocaleDateString ('pr-BR',{
+        return data.toLocaleTimeString ('pt-BR',{
         hour12: false, 
         timeZone: 'UTC'
     });
@@ -11,9 +11,10 @@ const iniciar = document.querySelector('.iniciar');
 const parar = document.querySelector('.parar');
 const reset = document.querySelector('.reset');
 let segundos = 0;
+let timer;
 
 function iniciarRelogio () {
-    const timer = setInterval(function() {
+    timer = setInterval(function() {
         segundos++;
         relogio.innerHTML = criaHoraDosSegundos(segundos);
        
@@ -21,15 +22,18 @@ function iniciarRelogio () {
 }
 
 iniciar.addEventListener('click', function(event){
+    clearInterval(timer); //isso já garante que não vai dar um bug de 2 timer na página.
     iniciarRelogio();
 });
 
 parar.addEventListener('click', function(event){
-    relogio.innerHTML = 'cliquei no parar'
+    clearInterval(timer);
 });
 
 reset.addEventListener('click', function(event){
-    relogio.innerHTML = 'cliquei no reset'
+    clearInterval(timer);
+    relogio.innerHTML = "00:00:00";
+    segundos = 0;
 });
 
 
