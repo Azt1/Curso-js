@@ -22,15 +22,18 @@ function iniciarRelogio () {
 }
 
 iniciar.addEventListener('click', function(event){
+    relogio.classList.remove('pausado')
     clearInterval(timer); //isso já garante que não vai dar um bug de 2 timer na página.
     iniciarRelogio();
 });
 
 parar.addEventListener('click', function(event){
+    relogio.classList.add('pausado')
     clearInterval(timer);
 });
 
 reset.addEventListener('click', function(event){
+    relogio.classList.remove('pausado')
     clearInterval(timer);
     relogio.innerHTML = "00:00:00";
     segundos = 0;
