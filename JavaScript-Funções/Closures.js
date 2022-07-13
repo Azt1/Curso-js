@@ -1,6 +1,6 @@
 // Closure é quando uma função "lembra"
 // seu escopo léxico, mesmo quando a funçao
-// é executada fora desse escopo léxico\
+// é executada fora desse escopo léxico
 function retornaFunçao(nome) {
     return function() {
         return nome;
