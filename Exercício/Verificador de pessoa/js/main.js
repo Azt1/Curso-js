@@ -19,7 +19,7 @@ function verificar() {
             } else if (idade >= 11 && idade <= 25) {
                 // JOVEM
                 img.setAttribute('src', 'homem20.jpg')
-            } else if (idade >= 26 && idade <= 50) {
+            } else if (idade >= 26 && idade < 58) {
                 // ADULTO
                 img.setAttribute('src', 'homem40.jpg')
             } else {
@@ -34,7 +34,7 @@ function verificar() {
            } else if (idade >= 11 && idade < 25) {
                // JOVEM
                img.setAttribute('src', 'mulher20.jpg')
-            } else if (idade >= 26 && idade <= 50) {
+            } else if (idade >= 26 && idade <= 59) {
                 // ADULTO
                img.setAttribute('src', 'mulher40.jpg')
            } else {
@@ -43,7 +43,7 @@ function verificar() {
            }
         } else if (formSex[2].checked) {
             genero = 'Não Binário'
-            if (idade >=0 && idade <= 120) {
+            if (idade >=-1000 && idade <= 1000) {
                 img.setAttribute('src', 'naoBinario.jpg')
             }
         }
