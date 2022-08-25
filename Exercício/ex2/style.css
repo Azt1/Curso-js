@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(104, 138, 35);
+}
+
+div {
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.frase {
+    font-weight: bold;
+    color: #fff;
+}
